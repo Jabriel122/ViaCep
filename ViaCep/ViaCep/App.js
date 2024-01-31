@@ -1,20 +1,35 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet, Text, TextInput, View } from 'react-native';
+import { Header } from './src/components/Header';
+import { ContainerApp } from './styles';
+//import fonts
+import { useFonts, Roboto_500Medium, Roboto_700Bold } from '@expo-google-fonts/roboto';
+import { ScreenHome } from './src/components/screens/ScreenHome';
+
 
 export default function App() {
+
+  let [fontsLoaded, fontError] = useFonts({
+    Roboto_500Medium, Roboto_700Bold
+  });
+  if (!fontsLoaded && !fontError) {
+    return null;
+  }
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <ContainerApp>
+
+      <Header />
+      
+
+      <ScreenHome/>
+
+
       <StatusBar style="auto" />
-    </View>
+    </ContainerApp>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+
 });
