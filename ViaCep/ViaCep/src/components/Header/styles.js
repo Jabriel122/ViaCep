@@ -8,7 +8,7 @@ export const HeaderContainer = styled.View`
     /* border-color: black;
     border-width: 2; */
     width: 100%;
-    flex: 0.4;
+    flex: 1;
     background-color: #FECC2B;
     justify-content: center;
     align-items: center;
