@@ -15,30 +15,20 @@ export const ScrollViewHome = styled.ScrollView`
     /* border-color: blue;
     border-width: 3px; */
 
+
+
 `
 export const ContainerHome = styled.View`
     
-    padding: 35px;
+    padding-top: 20px;
+    height: 90%;
+    width: 100%;
     /* border-color: blue;
     border-width: 3px; */
 `
-// export const BoxInput = styled.View`
-//      border-Color: 'red';
-//     border-Width: 2;
-//     width: '80%';
-// `
 
-// export const LabelBox = styled.View`
-//     background-color: aqua;
-//     width: '80%';
-// `
-
-// export const TextLabel = styled.Text`
-//     color: blue;
-// `
-// export const TextInputHome = styled.TextInput`
-//     width: 20%;
-// // `
 export const BoxContainer = styled.View`
     flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
 `

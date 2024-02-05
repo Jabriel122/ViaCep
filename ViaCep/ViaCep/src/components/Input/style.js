@@ -9,4 +9,6 @@ export const InputText = styled.TextInput`
     font-family: "Roboto_500Medium";
     border-radius: 10px;
     padding: 20px;
+    background-color: #F6F6F6;
+   
 `

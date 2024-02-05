@@ -1,5 +1,4 @@
-//PAra amanha
-//definir props
+
 
 import { Input } from "../Input/Index"
 import { Label } from "../Label"
@@ -7,11 +6,11 @@ import { FieldContent } from "./style"
 
 export const BoxInput = ({
     fieldWidth = 100,
-    editable = false,
+    editable = true,
     textLabel,
     placeholder,
     fieldValue = null,
-    onchangeText = null,
+    onChangeText = null,
     KeyType = 'default',
     maxLenght
 
@@ -28,7 +27,7 @@ export const BoxInput = ({
                 KeyType = {KeyType}
                 maxLenght = {maxLenght}
                 fieldValue = {fieldValue}
-                onchangeText = {onchangeText}
+                onChangeText = {onChangeText}
             />
 
         </FieldContent>

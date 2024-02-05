@@ -4,7 +4,7 @@ export function Input({
     placeholder,
     editable,
     fieldValue,
-    oneChangeText,
+    onChangeText,
     KeyType,
     maxLength
 }) {
@@ -16,7 +16,7 @@ export function Input({
                 keyboardType={KeyType}
                 maxLength={maxLength}
                 value={fieldValue}
-                oneChangeText={oneChangeText}
+                onChangeText={onChangeText}
             />
 
     )
